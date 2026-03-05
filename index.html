@@ -3,75 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarwinCheck – Auditoría de Biodiversidad</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>BioCore | Consultoría Ambiental</title>
     <style>
-        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f4; }
+        header { text-align: center; padding: 40px 0; background-color: #2d5a27; color: white; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; }
+        .tagline { font-style: italic; opacity: 0.9; }
+        .section { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h2 { color: #2d5a27; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+        .app-box { border-left: 5px solid #4CAF50; padding-left: 15px; background: #f9fff9; }
+        .price { font-size: 1.5em; color: #2d5a27; font-weight: bold; text-align: center; margin: 20px 0; }
+        .btn { display: block; width: 250px; margin: 20px auto; padding: 15px; text-align: center; background-color: #25D366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background-color: #128C7E; }
+        .btn-app { background-color: #007bff; }
+        .btn-app:hover { background-color: #0056b3; }
+        footer { text-align: center; font-size: 0.8em; color: #777; margin-top: 40px; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-green-600">DarwinCheck</h1>
-            <nav class="hidden md:flex space-x-6 font-medium">
-                <a href="#inicio" class="hover:text-green-600">Inicio</a>
-                <a href="#servicio" class="hover:text-green-600">Servicios</a>
-                <a href="#sobre-mi" class="hover:text-green-600">Sobre mí</a>
-            </nav>
-        </div>
-    </header>
+<header>
+    <h1>BioCore</h1>
+    <p class="tagline">Consultoría en Biodiversidad y Gestión de Datos</p>
+</header>
 
-    <section id="inicio" class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Auditoría Taxonómica y Geográfica Automatizada</h2>
-            <p class="text-xl mb-8 text-gray-600 max-w-2xl mx-auto">Asegura el cumplimiento SMA con respaldo del Museo de Zoología UdeC, GBIF y SIMBIO.</p>
-            <a href="https://stingray-app-fedm2.ondigitalocean.app/" target="_blank" class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-green-700 transition">Lanzar App DarwinCheck</a>
-        </div>
-    </section>
+<div class="section">
+    <h2>Especialista en Monitoreo Ambiental</h2>
+    <p>Liderado por <strong>Loreto</strong>, Bióloga titulada con <strong>Máxima Distinción</strong> de la Universidad de Concepción. Nos especializamos en levantamiento de línea base, monitoreo de fauna y cumplimiento de estándares internacionales.</p>
+</div>
 
-    <section id="servicio" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden md:flex">
-                <div class="md:w-1/2 p-12 bg-green-600 text-white">
-                    <h3 class="text-3xl font-bold mb-4">Servicio de Auditoría Experta</h3>
-                    <p class="text-lg mb-6 text-green-100">Si prefieres externalizar el proceso, realizamos la validación técnica completa por ti con rigor científico.</p>
-                    <div class="text-4xl font-black mb-2">$50.000 CLP <span class="text-sm font-normal">por planilla</span></div>
-                    <p class="text-sm italic text-green-100">*Tarifa promocional de marcha blanca</p>
-                </div>
-                <div class="md:w-1/2 p-12">
-                    <h4 class="font-bold text-xl mb-4">Lo que validamos (Checklist):</h4>
-                    <ul class="space-y-3">
-                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Integridad Taxonómica (Museo UdeC, SIMBIO, GBIF)</li>
-                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Precisión Geográfica y Humedales</li>
-                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Cumplimiento RCE/SMA</li>
-                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> Entrega con variables en español</li>
-                    </ul>
-                    <a href="https://wa.me/56944829865?text=Hola%20Loreto,%20me%20interesa%20el%20servicio%20de%20auditor%C3%ADa" class="block mt-8 text-center bg-gray-900 text-white py-3 rounded-lg font-bold hover:bg-gray-800">Solicitar Auditoría</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="section app-box">
+    <h2>DarwinCheck: Auditoría de Datos</h2>
+    <p>Nuestra aplicación exclusiva diseñada para consultoras que requieren precisión absoluta en sus informes para la <strong>SMA</strong>.</p>
+    <ul>
+        <li><strong>Validación Darwin Core:</strong> Auditoría automática de planillas bajo estándares globales.</li>
+        <li><strong>Control de Calidad:</strong> Identificación inmediata de errores en coordenadas, fechas y taxonomía.</li>
+        <li><strong>Eficiencia:</strong> Optimización de procesos técnicos para equipos de terreno y oficina.</li>
+    </ul>
+    <a href="https://tu-app-en-digitalocean.com" class="btn btn-app">Probar DarwinCheck (Beta)</a>
+</div>
 
-    <section id="sobre-mi" class="py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-bold mb-4 italic">"Rigor científico al servicio de tus datos"</h3>
-            <p class="max-w-3xl mx-auto text-lg text-gray-700">
-                <strong>Loreto Campos Carrasco</strong>, Bióloga titulada con <strong>Máxima Distinción</strong> por la Universidad de Concepción. Especialista en informática de la biodiversidad y cumplimiento normativo ambiental.
-            </p>
-        </div>
-    </section>
+<div class="section">
+    <h2>Servicios de Consultoría</h2>
+    <p>Ofrecemos revisión y validación de bases de datos biológicas para cumplimiento normativo.</p>
+    <div class="price">Tarifa por Planilla: $50.000 CLP</div>
+    <a href="https://wa.me/tu-numero-aqui" class="btn">Contactar por WhatsApp</a>
+</div>
 
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-6 text-center text-sm">
-            © 2026 DarwinCheck – Diseñado en Chile por Loreto Campos.
-        </div>
-    </footer>
-
-    <a href="https://wa.me/56944829865?text=Hola%20Loreto,%20me%20interesa%20el%20servicio%20de%20auditor%C3%ADa" class="float-wa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<footer>
+    <p>&copy; 2026 BioCore Consultoría Ambiental. Laja, Chile.</p>
+</footer>
 
 </body>
 </html>
